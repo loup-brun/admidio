@@ -18,7 +18,7 @@ if (!is_file(dirname(__DIR__) . '/adm_my_files/config.php'))
 
 require_once(__DIR__ . '/system/common.php');
 
-$headline = 'Admidio '.$gL10n->get('SYS_OVERVIEW');
+$headline = $gL10n->get('SYS_OVERVIEW');
 
 // Navigation of the module starts here
 $gNavigation->addStartUrl(CURRENT_URL, $headline);
@@ -35,6 +35,11 @@ if($gValidLogin)
     $mainMenu->addItem(
         'adm_menu_item_my_profile', ADMIDIO_URL . FOLDER_MODULES . '/profile/profile.php',
         $gL10n->get('PRO_MY_PROFILE'), 'profile.png'
+    );
+    // show link to own profile
+    $mainMenu->addItem(
+        'adm_menu_item_paiements', ADMIDIO_URL . FOLDER_MODULES . '/paiements/paiements.php',
+        'Paiements', 'lock.png'
     );
     // show logout link
     $mainMenu->addItem(

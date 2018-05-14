@@ -21,6 +21,10 @@
         <name>French - Français</name>
     </language>
     <language>
+        <isocode>fr-ca</isocode>
+        <name>French Canada - Français Canada</name>
+    </language>
+    <language>
         <isocode>de</isocode>
         <name>German - Deutsch (du)</name>
     </language>
