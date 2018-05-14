@@ -24,3 +24,8 @@
 
 # For custom configuration
 /.php_cs
+
+# COCH added files
+.DS_Store
+deploy*
+rsync.exclude
