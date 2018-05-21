@@ -49,6 +49,9 @@ try
         )
     ));
 
+
+    $user->saveChangesWithoutRights();
+
     $currentBalance = $user->getValue('MONTANT_DU');
 
     $currentBalance = (float)$currentBalance;
@@ -87,7 +90,6 @@ try
         $displayAmount = substr_replace($difference, ',', -2, 0);
     }
 
-    $user->saveChangesWithoutRights();
     $user->save();
 
     $content .= 'Merci! Votre paiement a été effectué avec succès. Votre balance est maintenant de <strong>' . $displayAmount . '&nbsp;$</strong>.';
