@@ -55,7 +55,6 @@ try
     $amount = (float)$amount;
 
     $difference = $currentBalance - $amount;
-    var_dump($difference);
 
 //    if ($isFirstPayment)
 //    {
@@ -69,7 +68,6 @@ try
 //        $transactionHistory = ',
 //';
 //    }
-    $user->saveChangesWithoutRights();
 
     $newTransactionHistory = $transactionHistory . '
 { id: \'' . $charge['id'] . '\', amount: ' . $amount . ' }';
