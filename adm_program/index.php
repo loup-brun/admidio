@@ -66,6 +66,7 @@ else
 }
 
 // display Menu
+$page->addHtml('<div class="alert alert-danger"><strong>NOTE</strong><p>L’instance du Portail sera terminée sous peu. Veuillez ne plus utiliser ce système.</p></div>');
 $page->addHtml($page->showMainMenu());
 
 $page->show();
